@@ -4,7 +4,8 @@ class Solution {
         while(set.add(n)){
             int c=0;
             while(n>0){
-            c+= Math.pow(n%10,2);
+            int digit=n%10;
+            c+= digit*digit;
             n/=10;
             }
             if(c==1) return true;
