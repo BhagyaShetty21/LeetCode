@@ -1,9 +1,8 @@
 class Solution {
     public boolean isHappy(int n) {
         HashSet<Integer> set = new HashSet<>();
-        int c=0;
-        while(set.add(c)){
-            c=0;
+        while(set.add(n)){
+            int c=0;
             while(n>0){
             c+= Math.pow(n%10,2);
             n/=10;
